@@ -6,7 +6,10 @@ export const initialState = {
     editing: false
   };
   
-const titleReducer = (state, action) => {
+
+//Then wee change recuder
+
+const titleReducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_TITLE:
       return {
