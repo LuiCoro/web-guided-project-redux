@@ -6,13 +6,11 @@ import DragonList from './components/DragonList';
 import './styles.css';
 
 import {createStore} from "redux";
-
-
-import titleReducer from "./reducers/titleReducer";
-
 import {Provider} from "react-redux";
 
-const store = createStore(titleReducer)
+import reducer from './reducers'
+
+const store = createStore(reducer)
 
 console.log('store:', store.getState())
 
